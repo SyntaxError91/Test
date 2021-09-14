@@ -1,0 +1,22 @@
+uuid: 8a72eab0-3935-4326-95c0-c00a5cb93184
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.articoli
+id: node.articoli.promote
+field_name: promote
+entity_type: node
+bundle: articoli
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

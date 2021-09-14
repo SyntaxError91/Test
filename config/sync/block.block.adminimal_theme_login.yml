@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   module:
+    - ctools
+    - node
     - user
   theme:
     - adminimal_theme
@@ -19,4 +21,25 @@ settings:
   label: 'User login'
   provider: user
   label_display: visible
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      homepage: homepage
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  node_type:
+    id: node_type
+    bundles:
+      homepage: homepage
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

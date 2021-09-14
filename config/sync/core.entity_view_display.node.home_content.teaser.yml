@@ -1,0 +1,22 @@
+uuid: f6dd8760-f374-48fc-a999-9ce3828ad105
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.home_content.field_corpo
+    - node.type.home_content
+  module:
+    - user
+id: node.home_content.teaser
+targetEntityType: node
+bundle: home_content
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_corpo: true

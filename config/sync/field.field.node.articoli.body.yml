@@ -1,0 +1,23 @@
+uuid: add6ff3d-d072-4be8-8013-f0bd3e73e050
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.articoli
+  module:
+    - text
+id: node.articoli.body
+field_name: body
+entity_type: node
+bundle: articoli
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

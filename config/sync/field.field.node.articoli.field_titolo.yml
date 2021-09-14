@@ -1,0 +1,19 @@
+uuid: 437a9876-c775-4b3c-a45b-cdab1aa76267
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titolo
+    - node.type.articoli
+id: node.articoli.field_titolo
+field_name: field_titolo
+entity_type: node
+bundle: articoli
+label: Titolo
+description: 'Titolo dell''articolo'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

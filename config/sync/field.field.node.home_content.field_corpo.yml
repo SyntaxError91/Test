@@ -1,0 +1,21 @@
+uuid: 7de14027-ea6c-4d5c-9202-845d42d02798
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_corpo
+    - node.type.home_content
+  module:
+    - text
+id: node.home_content.field_corpo
+field_name: field_corpo
+entity_type: node
+bundle: home_content
+label: 'Testo editabile dalla Redazione'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

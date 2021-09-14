@@ -1,0 +1,14 @@
+uuid: fa22efb4-326e-4b46-90f9-2a6bcc1c72d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.redazione
+  module:
+    - user
+id: user_add_role_action.redazione
+label: 'Add the Redazione role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: redazione

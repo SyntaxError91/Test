@@ -1,0 +1,34 @@
+uuid: d8bbc25e-ecd4-4228-8eee-9453ec42070a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.articoli.body
+    - field.field.node.articoli.field_sport
+    - field.field.node.articoli.field_titolo
+    - node.type.articoli
+  module:
+    - text
+    - user
+id: node.articoli.teaser
+targetEntityType: node
+bundle: articoli
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_sport: true
+  field_titolo: true

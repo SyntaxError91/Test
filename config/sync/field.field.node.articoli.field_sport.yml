@@ -1,0 +1,29 @@
+uuid: d3bdb9c7-7b92-4b29-af05-5d9c5113dd21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sport
+    - node.type.articoli
+    - taxonomy.vocabulary.categoria
+id: node.articoli.field_sport
+field_name: field_sport
+entity_type: node
+bundle: articoli
+label: Sport
+description: 'Calcio, Formula 1, Tennis'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categoria: categoria
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

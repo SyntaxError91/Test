@@ -1,0 +1,14 @@
+uuid: 42b7b99f-d02b-437b-a566-8a1abc7bbb2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.redazione
+  module:
+    - user
+id: user_remove_role_action.redazione
+label: 'Remove the Redazione role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: redazione

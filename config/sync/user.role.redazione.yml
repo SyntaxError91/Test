@@ -1,0 +1,11 @@
+uuid: d70e4280-4095-4946-8ff2-adda315598d1
+langcode: en
+status: true
+dependencies: {  }
+id: redazione
+label: Redazione
+weight: 2
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'edit own home_content content'
