@@ -1,0 +1,7 @@
+task2.saluto:
+  path: '/hello-world'
+  defaults:
+    _controller: '\Drupal\task2\Controller\HelloController::page'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'

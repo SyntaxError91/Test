@@ -1,0 +1,4 @@
+name: Task 2 block
+descriprion: Implement a block with date
+type: module
+core_version_requirement: ^8.8.0 || ^9.0
